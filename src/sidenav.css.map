@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["scss/sidenav.scss"],"names":[],"mappings":"AAAA;EACI;EACA;;AACA;EACI;EACA;EACA","file":"sidenav.css"}
+{"version":3,"sourceRoot":"","sources":["scss/colors.scss","scss/sidenav.scss"],"names":[],"mappings":"AAAA;ACEA;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;EACA;EACA;;AACA;EACI;;AAGR;EACI;EACA;;AAEJ;EACI;EACA;EACA;EACA;EACA;;AACA;EACI,OD5BM;EC6BN","file":"sidenav.css"}

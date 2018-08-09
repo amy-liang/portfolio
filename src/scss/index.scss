@@ -1,19 +1,22 @@
-/* Colours */
-$primary-magenta: #f40056;
-$secondary-magenta: #f9b2c2;
-$stone-black: #312f35;
-$slab-grey: #75757c;
-$blue-grey: #ebebf2;
+@import 'colors.scss';
 
 /* Main */
 body{
-    background-color: $blue-grey;
+    background-color: $grey-1;
     font-family: Quicksand;
-    color: $stone-black;
+    color: $grey-7;
+    letter-spacing: 1px;
+    &::-webkit-scrollbar {
+        height: 5px;
+        &-thumb {
+          background: $grey-3;
+        }
+      }
 }
 
 h1{
-    color: $primary-magenta;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 }
 
 .main{
@@ -22,7 +25,6 @@ h1{
     -ms-flex-direction: row;
     flex-direction: row;
     height: 100vh;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -30,6 +32,9 @@ h1{
     width: 100%;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
+
 @import 'sidenav';
+@import 'intro';

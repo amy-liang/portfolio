@@ -7,7 +7,7 @@ class Sidenav extends Component {
   render() {
     return (
       <div className="sidenav">
-      <img className="sidenav__logo" src={logo}/>
+      <img className="sidenav__logo" src={logo} alt="Personal Logo"/>
         <ul className="sidenav__list">
           { this.MENU_ITEMS.map((value,key) => <li className="sidenav__item" key={key}>{value}</li>) }
         </ul>

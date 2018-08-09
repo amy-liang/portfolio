@@ -1,8 +1,9 @@
+@import 'colors.scss';
+
 .sidenav {
     position: relative;
     height: 100%;
     width: 100px;
-    padding-right: 12px;
 
     &__logo{
         position: fixed;
@@ -20,7 +21,7 @@
         top: 150px;
     }
     &__item{
-        font-weight: 700;
+        font-weight: 600;
         list-style-type: none;
         margin: 36px 0;
         cursor: pointer;

@@ -4,10 +4,18 @@ body {
   background-color: #ebebf2;
   font-family: Quicksand;
   color: #312f35;
+  letter-spacing: 1px;
+}
+body::-webkit-scrollbar {
+  height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #c0c1cc;
 }
 
 h1 {
-  color: #f40056;
+  font-size: 1.5rem;
+  text-transform: uppercase;
 }
 
 .main {
@@ -16,7 +24,6 @@ h1 {
   -ms-flex-direction: row;
   flex-direction: row;
   height: 100vh;
-  overflow: hidden;
   width: 100%;
 }
 
@@ -24,13 +31,14 @@ h1 {
   width: 100%;
   display: flex;
   justify-content: center;
+  text-align: center;
 }
 
+/* Colours */
 .sidenav {
   position: relative;
   height: 100%;
   width: 100px;
-  padding-right: 12px;
 }
 .sidenav__logo {
   position: fixed;
@@ -48,7 +56,7 @@ h1 {
   top: 150px;
 }
 .sidenav__item {
-  font-weight: 700;
+  font-weight: 600;
   list-style-type: none;
   margin: 36px 0;
   cursor: pointer;
@@ -57,6 +65,14 @@ h1 {
 .sidenav__item:hover {
   color: #f40056;
   transform: scale(1.1);
+}
+
+.intro {
+  margin-top: 100px;
+}
+.intro__img {
+  width: 250px;
+  height: 250px;
 }
 
 /*# sourceMappingURL=index.css.map */
