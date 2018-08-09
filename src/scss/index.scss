@@ -16,4 +16,20 @@ h1{
     color: $primary-magenta;
 }
 
+.main{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    height: 100vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 @import 'sidenav';

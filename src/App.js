@@ -5,9 +5,11 @@ import Intro from './pages/intro';
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <Sidenav/>
-      <Intro/>
+      <div className="main">
+        <Sidenav/>
+        <div className="content">
+          <Intro/>
+        </div>
       </div>
     );
   }

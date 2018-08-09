@@ -1,16 +1,33 @@
 .sidenav {
-    position: fixed;
+    position: relative;
+    height: 100%;
+    width: 100px;
+    padding-right: 12px;
+
+    &__logo{
+        position: fixed;
+        margin: 24px;
+        height: 45px;
+        width: 45px;
+        cursor: pointer;
+        transition: transform 0.5s ease-in-out;
+        &:hover{
+            transform: scale(1.1);
+        }
+    }
     &__list{
         position: fixed;
         top: 150px;
     }
     &__item{
+        font-weight: 700;
         list-style-type: none;
         margin: 36px 0;
         cursor: pointer;
-        transition: color 0.5s ease-in-out;
+        transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
         &:hover{
             color: $primary-magenta;
+            transform: scale(1.1);
         }
     }
 }
