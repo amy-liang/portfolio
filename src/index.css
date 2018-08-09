@@ -1,0 +1,30 @@
+/* Colours */
+/* Main */
+body {
+  background-color: #ebebf2;
+  font-family: Quicksand;
+  color: #312f35;
+}
+
+h1 {
+  color: #f40056;
+}
+
+.sidenav {
+  position: fixed;
+}
+.sidenav__list {
+  position: fixed;
+  top: 150px;
+}
+.sidenav__item {
+  list-style-type: none;
+  margin: 36px 0;
+  cursor: pointer;
+  transition: color 0.5s ease-in-out;
+}
+.sidenav__item:hover {
+  color: #f40056;
+}
+
+/*# sourceMappingURL=index.css.map */

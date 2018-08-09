@@ -1,0 +1,16 @@
+.sidenav {
+    position: fixed;
+    &__list{
+        position: fixed;
+        top: 150px;
+    }
+    &__item{
+        list-style-type: none;
+        margin: 36px 0;
+        cursor: pointer;
+        transition: color 0.5s ease-in-out;
+        &:hover{
+            color: $primary-magenta;
+        }
+    }
+}

@@ -1,0 +1,19 @@
+/* Colours */
+$primary-magenta: #f40056;
+$secondary-magenta: #f9b2c2;
+$stone-black: #312f35;
+$slab-grey: #75757c;
+$blue-grey: #ebebf2;
+
+/* Main */
+body{
+    background-color: $blue-grey;
+    font-family: Quicksand;
+    color: $stone-black;
+}
+
+h1{
+    color: $primary-magenta;
+}
+
+@import 'sidenav';
