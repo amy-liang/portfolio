@@ -1,0 +1,18 @@
+.project-card{
+    background-color: blue;
+    padding: 24px;
+    width: 50%;
+    margin: 16px auto;
+    color: white;
+
+    &__content{
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    &:hover div{
+        opacity: 1;
+    }
+    &__title{
+        text-transform: uppercase;
+    }
+}

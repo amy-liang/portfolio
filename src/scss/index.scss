@@ -30,11 +30,19 @@ h1{
 
 .content{
     width: 100%;
-    display: flex;
-    justify-content: center;
     text-align: center;
+}
+
+.section{
+    &__content{
+        margin: 16px;
+    }
+    &__title{
+        margin-top: 64px;
+    }
 }
 
 
 @import 'sidenav';
 @import 'intro';
+@import 'projectcard';

@@ -29,9 +29,14 @@ h1 {
 
 .content {
   width: 100%;
-  display: flex;
-  justify-content: center;
   text-align: center;
+}
+
+.section__content {
+  margin: 16px;
+}
+.section__title {
+  margin-top: 64px;
 }
 
 /* Colours */
@@ -73,6 +78,24 @@ h1 {
 .intro__img {
   width: 250px;
   height: 250px;
+}
+
+.project-card {
+  background-color: blue;
+  padding: 24px;
+  width: 50%;
+  margin: 16px auto;
+  color: white;
+}
+.project-card__content {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.project-card:hover div {
+  opacity: 1;
+}
+.project-card__title {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=index.css.map */
