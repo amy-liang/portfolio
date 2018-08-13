@@ -14,8 +14,16 @@ body::-webkit-scrollbar-thumb {
 }
 
 h1 {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #312f35;
 }
 
 .main {
@@ -82,10 +90,11 @@ h1 {
 
 .project-card {
   background-color: blue;
-  padding: 24px;
+  padding: 32px;
   width: 50%;
   margin: 16px auto;
   color: white;
+  cursor: pointer;
 }
 .project-card__content {
   opacity: 0;

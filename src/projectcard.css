@@ -1,9 +1,10 @@
 .project-card {
   background-color: blue;
-  padding: 24px;
+  padding: 32px;
   width: 50%;
   margin: 16px auto;
   color: white;
+  cursor: pointer;
 }
 .project-card__content {
   opacity: 0;

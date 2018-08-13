@@ -15,8 +15,16 @@ body{
 }
 
 h1{
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        color: $grey-7;
+    }
 }
 
 .main{
