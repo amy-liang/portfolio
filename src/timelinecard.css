@@ -1,0 +1,39 @@
+/* Colours */
+.timeline-card {
+  width: 100%;
+}
+.timeline-card__circle--top, .timeline-card__circle--bot {
+  background-color: #f40056;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline-card__circle--top {
+  top: 8px;
+}
+.timeline-card__circle--bot {
+  top: -8px;
+}
+.timeline-card__line {
+  width: 0;
+  height: 120px;
+  position: relative;
+  border: 3px solid #f40056;
+  margin: 0 auto;
+}
+.timeline-card__content--left, .timeline-card__content--right {
+  position: absolute;
+  background: white;
+  width: 200px;
+  height: 60px;
+}
+.timeline-card__content--left {
+  right: 55%;
+}
+.timeline-card__content--right {
+  left: 60%;
+}
+
+/*# sourceMappingURL=timelinecard.css.map */
