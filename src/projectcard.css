@@ -39,7 +39,7 @@
   height: 300%;
 }
 .project-card__title {
-  text-transform: uppercase;
+  margin: 4px;
 }
 
 /*# sourceMappingURL=projectcard.css.map */

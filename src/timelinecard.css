@@ -23,17 +23,54 @@
   border: 3px solid #f40056;
   margin: 0 auto;
 }
+.timeline-card__title {
+  font-size: 0.9rem;
+}
+.timeline-card__text {
+  font-size: 0.7rem;
+  color: #8f8f99;
+  margin: 0;
+}
 .timeline-card__content--left, .timeline-card__content--right {
   position: absolute;
   background: white;
-  width: 200px;
-  height: 60px;
+  width: 240px;
+  height: 80px;
+  margin-top: -104px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.timeline-card__content--left::after, .timeline-card__content--right::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: 25px;
+  border-width: 15px;
+  border-style: solid;
+}
+.timeline-card__content--left:hover, .timeline-card__content--right:hover {
+  transform: scale(1.04);
+  color: #f40056;
 }
 .timeline-card__content--left {
-  right: 55%;
+  right: 50%;
+}
+.timeline-card__content--left::after {
+  border-color: transparent transparent transparent white;
+  left: 240px;
 }
 .timeline-card__content--right {
-  left: 60%;
+  left: 50%;
+  margin-left: 90px;
+}
+.timeline-card__content--right::after {
+  border-color: transparent white transparent transparent;
+  right: 240px;
 }
 
 /*# sourceMappingURL=timelinecard.css.map */
