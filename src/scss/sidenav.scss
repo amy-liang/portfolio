@@ -11,10 +11,6 @@
         height: 45px;
         width: 45px;
         cursor: pointer;
-        transition: transform 0.5s ease-in-out;
-        &:hover{
-            transform: scale(1.1);
-        }
     }
     &__list{
         position: fixed;
@@ -25,6 +21,7 @@
         list-style-type: none;
         margin: 36px 0;
         cursor: pointer;
+        color: $grey-7;
         transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
         &:hover {
             color: $primary-magenta;

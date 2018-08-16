@@ -67,10 +67,6 @@ a:visited {
   height: 45px;
   width: 45px;
   cursor: pointer;
-  transition: transform 0.5s ease-in-out;
-}
-.sidenav__logo:hover {
-  transform: scale(1.1);
 }
 .sidenav__list {
   position: fixed;
@@ -81,6 +77,7 @@ a:visited {
   list-style-type: none;
   margin: 36px 0;
   cursor: pointer;
+  color: #312f35;
   transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .sidenav__item:hover {
