@@ -5,6 +5,7 @@ import Work from './pages/work';
 import Skills from './pages/skills';
 import Projects from './pages/projects';
 import Contact from './pages/contact';
+import LOGO from './img/logo.svg';
 
 class App extends Component {
   render() {
@@ -17,6 +18,10 @@ class App extends Component {
           <Skills/>
           <Projects/>
           <Contact />
+          <div className="footer">
+            <p className="footer__text">Site by Amy Liang</p>
+            <img className="footer__logo" src={LOGO} alt="Personal Logo"/>
+          </div>
         </div>
       </div>
     );

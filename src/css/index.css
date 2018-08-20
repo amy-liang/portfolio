@@ -56,6 +56,34 @@ a:visited {
   margin-bottom: 32px;
 }
 
+.footer {
+  margin: 90px 0px;
+}
+.footer__text {
+  font-size: 0.8rem;
+}
+.footer__logo {
+  width: 30px;
+  height: 30px;
+}
+
+.contact a {
+  display: inline-block;
+  position: relative;
+}
+.contact svg {
+  width: 50px;
+  height: 50px;
+  padding: 8px 24px;
+}
+.contact svg path {
+  fill: #312f35;
+  transition: fill 0.5s ease-in-out;
+}
+.contact svg:hover path {
+  fill: #f40056;
+}
+
 /* Colours */
 .sidenav {
   position: relative;
@@ -166,7 +194,7 @@ a:visited {
 }
 .timeline-card__line {
   width: 0;
-  height: 120px;
+  height: 180px;
   position: relative;
   border: 3px solid #f40056;
   margin: 0 auto;
@@ -184,7 +212,7 @@ a:visited {
   background: white;
   width: 240px;
   height: 80px;
-  margin-top: -104px;
+  margin-top: -128px;
   transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;

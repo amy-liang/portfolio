@@ -59,6 +59,36 @@ a{
     }
 }
 
+.footer{
+    margin: 90px 0px;
+    &__text{
+        font-size: 0.8rem;
+    }
+    &__logo{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+.contact{
+    & a {
+    display: inline-block;
+    position: relative;
+    }
+    & svg{
+        width: 50px;
+        height: 50px;
+        padding: 8px 24px;
+        & path {
+            fill: $grey-7;
+            transition: fill 0.5s ease-in-out;
+        }
+        &:hover path {
+            fill: $primary-magenta;
+        }
+    }
+}
+
 
 @import 'sidenav';
 @import 'intro';
