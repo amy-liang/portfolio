@@ -41,5 +41,10 @@
 .project-card__title {
   margin: 4px;
 }
+.project-card__icon {
+  width: 20px;
+  height: 20px;
+  padding: 4px;
+}
 
 /*# sourceMappingURL=projectcard.css.map */

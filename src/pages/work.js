@@ -10,7 +10,9 @@ class Work extends Component {
     return (
       <div className="section__content work" id="work">
         <h1 className="section__title">Timeline</h1>
+        <p>Current</p>
         { this.TIMELINECARDS.map((value,key) => <TimelineCard key={key} title={value.title} company={value.company} time={value.time} end={value.end} side={value.side} />)}
+        <p>2017</p>
       </div>
     );
   }
