@@ -114,6 +114,11 @@ a:visited {
   transform: scale(1.1);
 }
 
+@media (max-width: 900px) {
+  .sidenav__item {
+    transform: scale(0);
+  }
+}
 .intro {
   max-width: 400px;
   margin: 100px auto;
@@ -137,6 +142,7 @@ a:visited {
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+  transition: width 1s ease-in-out;
 }
 .project-card .over {
   opacity: 0;
@@ -174,9 +180,28 @@ a:visited {
   padding: 4px;
 }
 
+@media (max-width: 900px) {
+  .project-card {
+    width: 75%;
+  }
+  .project-card:hover .under {
+    top: -50%;
+    height: 200%;
+  }
+}
+@media (max-width: 480px) {
+  .project-card {
+    background-size: auto 100%;
+  }
+  .project-card:hover .under {
+    top: -20%;
+    height: 120%;
+  }
+}
 /* Colours */
 .timeline-card {
   width: 100%;
+  transition: margin 1s;
 }
 .timeline-card__circle--top, .timeline-card__circle--bot {
   background-color: #f40056;
@@ -247,6 +272,23 @@ a:visited {
 .timeline-card__content--right::after {
   border-color: transparent white transparent transparent;
   right: 240px;
+}
+
+@media (max-width: 900px) {
+  .timeline-card {
+    margin-left: -180px;
+  }
+  .timeline-card__content--left, .timeline-card__content--right {
+    margin-left: -80px;
+  }
+  .timeline-card__content--left {
+    left: 50%;
+  }
+  .timeline-card__content--left::after {
+    border-color: transparent white transparent transparent;
+    left: auto;
+    right: 240px;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */

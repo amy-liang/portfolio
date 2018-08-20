@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'mixins.scss';
 
 .sidenav {
     position: relative;
@@ -27,5 +28,11 @@
             color: $primary-magenta;
             transform: scale(1.1);
         }
+    }
+}
+
+@include tablet(){
+    .sidenav__item{
+        transform: scale(0);
     }
 }

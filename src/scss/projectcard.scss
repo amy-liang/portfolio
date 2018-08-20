@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'mixins.scss';
 
 .project-card{
     padding: 64px 32px;
@@ -12,6 +13,7 @@
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center;
+    transition: width 1s ease-in-out;
 
     & .over{
         opacity: 0;
@@ -48,5 +50,25 @@
         width: 20px;
         height: 20px;
         padding: 4px;
+    }
+}
+
+@include tablet(){
+    .project-card{ 
+        width: 75%;
+        &:hover .under{
+            top: -50%;
+            height: 200%;
+        }
+    }
+}
+
+@include phone(){
+    .project-card{ 
+        background-size: auto 100%;
+        &:hover .under{
+            top: -20%;
+            height: 120%;
+        }
     }
 }

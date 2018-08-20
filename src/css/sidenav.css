@@ -28,4 +28,10 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 900px) {
+  .sidenav__item {
+    transform: scale(0);
+  }
+}
+
 /*# sourceMappingURL=sidenav.css.map */

@@ -11,6 +11,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center;
+  transition: width 1s ease-in-out;
 }
 .project-card .over {
   opacity: 0;
@@ -46,6 +47,25 @@
   width: 20px;
   height: 20px;
   padding: 4px;
+}
+
+@media (max-width: 900px) {
+  .project-card {
+    width: 75%;
+  }
+  .project-card:hover .under {
+    top: -50%;
+    height: 200%;
+  }
+}
+@media (max-width: 480px) {
+  .project-card {
+    background-size: auto 100%;
+  }
+  .project-card:hover .under {
+    top: -20%;
+    height: 120%;
+  }
 }
 
 /*# sourceMappingURL=projectcard.css.map */

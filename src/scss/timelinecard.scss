@@ -4,6 +4,7 @@ $card-height: 80px;
 
 .timeline-card{
     width: 100%;
+    transition: margin 1s;
     &__circle--top, &__circle--bot{
         background-color: $primary-magenta;
         width: 20px;
@@ -45,6 +46,7 @@ $card-height: 80px;
         justify-content: center;
         align-content: center;
         cursor: pointer;
+
         &::after{
             content: "";
             position: absolute;
@@ -72,6 +74,24 @@ $card-height: 80px;
         &::after{
             border-color: transparent white transparent transparent;
             right: $card-width;
+        }
+    }
+}
+
+@include tablet(){
+    .timeline-card{
+        margin-left: -180px;
+    &__content--left, &__content--right{
+        margin-left: -80px;
+    }
+
+    &__content--left{
+        left: 50%;
+        &::after{
+            border-color: transparent white transparent transparent;
+            left: auto;
+            right: $card-width;
+            }
         }
     }
 }
