@@ -1,9 +1,9 @@
 @import 'colors';
 
 .project-card{
-    padding: 32px;
+    padding: 64px 32px;
     width: 50%;
-    margin: 16px auto;
+    margin: 32px auto;
     color: white;
     cursor: pointer;
     position: relative;
@@ -11,6 +11,7 @@
     background: $grey-7;
     background-repeat: no-repeat;
     background-size: 100% auto;
+    background-position: center;
 
     & .over{
         opacity: 0;

@@ -52,7 +52,8 @@ a:visited {
   margin: 16px;
 }
 .section__title {
-  margin-top: 64px;
+  margin-top: 80px;
+  margin-bottom: 32px;
 }
 
 /* Colours */
@@ -86,7 +87,9 @@ a:visited {
 }
 
 .intro {
-  margin-top: 100px;
+  max-width: 400px;
+  margin: 100px auto;
+  margin-bottom: 24px;
 }
 .intro__img {
   width: 250px;
@@ -95,9 +98,9 @@ a:visited {
 
 /* Colours */
 .project-card {
-  padding: 32px;
+  padding: 64px 32px;
   width: 50%;
-  margin: 16px auto;
+  margin: 32px auto;
   color: white;
   cursor: pointer;
   position: relative;
@@ -105,6 +108,7 @@ a:visited {
   background: #312f35;
   background-repeat: no-repeat;
   background-size: 100% auto;
+  background-position: center;
 }
 .project-card .over {
   opacity: 0;

@@ -8,7 +8,7 @@ class Sidenav extends Component {
   render() {
     return (
       <div className="sidenav">
-      <a href="#"><img className="sidenav__logo" src={logo} alt="Personal Logo"/></a>
+      <a href="/"><img className="sidenav__logo" src={logo} alt="Personal Logo"/></a>
         <ul className="sidenav__list">
           { this.MENU_ITEMS.map((value,key) => <a href={value.link} key={key}><li className="sidenav__item">{value.number}</li></a>) }
         </ul>
