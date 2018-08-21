@@ -64,11 +64,16 @@
 }
 
 @include phone(){
-    .project-card{ 
-        background-size: auto 100%;
+    .project-card{
         &:hover .under{
             top: -20%;
             height: 120%;
         }
+    }
+}
+
+@media (max-width: 400px) {
+    .project-card{ 
+        background-size: auto 100%;
     }
 }

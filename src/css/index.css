@@ -95,6 +95,7 @@ a:visited {
   margin: 24px;
   height: 45px;
   width: 45px;
+  z-index: 10;
   cursor: pointer;
 }
 .sidenav__list {
@@ -117,6 +118,11 @@ a:visited {
 @media (max-width: 900px) {
   .sidenav__item {
     transform: scale(0);
+  }
+}
+@media (max-width: 480px) {
+  .sidenav {
+    width: auto;
   }
 }
 .intro {
@@ -190,12 +196,14 @@ a:visited {
   }
 }
 @media (max-width: 480px) {
-  .project-card {
-    background-size: auto 100%;
-  }
   .project-card:hover .under {
     top: -20%;
     height: 120%;
+  }
+}
+@media (max-width: 400px) {
+  .project-card {
+    background-size: auto 100%;
   }
 }
 /* Colours */
@@ -288,6 +296,11 @@ a:visited {
     border-color: transparent white transparent transparent;
     left: auto;
     right: 240px;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-card {
+    margin-left: -130px;
   }
 }
 

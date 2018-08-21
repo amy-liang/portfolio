@@ -1,0 +1,99 @@
+/* Colours */
+.timeline-card {
+  width: 100%;
+  transition: margin 1s;
+}
+.timeline-card__circle--top, .timeline-card__circle--bot {
+  background-color: #f40056;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 0 auto;
+  position: relative;
+}
+.timeline-card__circle--top {
+  top: 8px;
+}
+.timeline-card__circle--bot {
+  top: -8px;
+}
+.timeline-card__line {
+  width: 0;
+  height: 180px;
+  position: relative;
+  border: 3px solid #f40056;
+  margin: 0 auto;
+}
+.timeline-card__title {
+  font-size: 0.9rem;
+}
+.timeline-card__text {
+  font-size: 0.7rem;
+  color: #8f8f99;
+  margin: 0;
+}
+.timeline-card__content--left, .timeline-card__content--right {
+  position: absolute;
+  background: white;
+  width: 240px;
+  height: 80px;
+  margin-top: -128px;
+  transition: all 0.5s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+}
+.timeline-card__content--left::after, .timeline-card__content--right::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  top: 25px;
+  border-width: 15px;
+  border-style: solid;
+}
+.timeline-card__content--left:hover, .timeline-card__content--right:hover {
+  transform: scale(1.04);
+  color: #f40056;
+}
+.timeline-card__content--left {
+  right: 50%;
+}
+.timeline-card__content--left::after {
+  border-color: transparent transparent transparent white;
+  left: 240px;
+}
+.timeline-card__content--right {
+  left: 50%;
+  margin-left: 90px;
+}
+.timeline-card__content--right::after {
+  border-color: transparent white transparent transparent;
+  right: 240px;
+}
+
+@media (max-width: 900px) {
+  .timeline-card {
+    margin-left: -180px;
+  }
+  .timeline-card__content--left, .timeline-card__content--right {
+    margin-left: -80px;
+  }
+  .timeline-card__content--left {
+    left: 50%;
+  }
+  .timeline-card__content--left::after {
+    border-color: transparent white transparent transparent;
+    left: auto;
+    right: 240px;
+  }
+}
+@media (max-width: 480px) {
+  .timeline-card {
+    margin-left: -130px;
+  }
+}
+
+/*# sourceMappingURL=timelinecard.css.map */

@@ -11,6 +11,7 @@
         margin: 24px;
         height: 45px;
         width: 45px;
+        z-index: 10;
         cursor: pointer;
     }
     &__list{
@@ -34,5 +35,11 @@
 @include tablet(){
     .sidenav__item{
         transform: scale(0);
+    }
+}
+
+@include phone(){
+    .sidenav{
+        width: auto;
     }
 }

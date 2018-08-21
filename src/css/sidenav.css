@@ -9,6 +9,7 @@
   margin: 24px;
   height: 45px;
   width: 45px;
+  z-index: 10;
   cursor: pointer;
 }
 .sidenav__list {
@@ -31,6 +32,11 @@
 @media (max-width: 900px) {
   .sidenav__item {
     transform: scale(0);
+  }
+}
+@media (max-width: 480px) {
+  .sidenav {
+    width: auto;
   }
 }
 

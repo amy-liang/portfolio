@@ -1,4 +1,6 @@
 @import 'colors';
+@import 'mixins';
+
 $card-width: 240px;
 $card-height: 80px;
 
@@ -93,5 +95,11 @@ $card-height: 80px;
             right: $card-width;
             }
         }
+    }
+}
+
+@include phone(){
+    .timeline-card{
+        margin-left: -130px;
     }
 }
