@@ -1,4 +1,5 @@
 @import 'colors.scss';
+@import 'mixins.scss';
 
 /* Main */
 body{
@@ -52,6 +53,7 @@ a{
 .section{
     &__content{
         margin: 16px;
+        padding: 0px 16px;
     }
     &__title{
         margin-top: 80px;
@@ -89,6 +91,11 @@ a{
     }
 }
 
+@include phone(){
+    .contact a {
+        display: block;
+    }
+}
 
 @import 'sidenav';
 @import 'intro';

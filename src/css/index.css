@@ -50,6 +50,7 @@ a:visited {
 
 .section__content {
   margin: 16px;
+  padding: 0px 16px;
 }
 .section__title {
   margin-top: 80px;
@@ -84,6 +85,11 @@ a:visited {
   fill: #f40056;
 }
 
+@media (max-width: 480px) {
+  .contact a {
+    display: block;
+  }
+}
 /* Colours */
 .sidenav {
   position: relative;
@@ -115,14 +121,12 @@ a:visited {
   transform: scale(1.1);
 }
 
-@media (max-width: 900px) {
-  .sidenav__item {
-    transform: scale(0);
-  }
-}
 @media (max-width: 480px) {
   .sidenav {
     width: auto;
+  }
+  .sidenav__item {
+    transform: scale(0);
   }
 }
 .intro {

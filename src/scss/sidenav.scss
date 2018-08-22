@@ -32,14 +32,12 @@
     }
 }
 
-@include tablet(){
-    .sidenav__item{
-        transform: scale(0);
-    }
-}
 
 @include phone(){
     .sidenav{
         width: auto;
+        &__item{
+            transform: scale(0);
+        }
     }
 }
