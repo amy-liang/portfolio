@@ -1,0 +1,43 @@
+@import 'colors';
+
+.skill-icon{
+    display: inline-flex;
+    width: auto;
+    height: auto;
+    margin: 0px 6px;
+    align-items: center;
+    justify-content: center;
+    &__icon {
+        width: 30px;
+        height: 30px;
+    }
+    &__label{
+        opacity: 0;
+        padding: 8px 16px;
+        background: $primary-magenta;
+        border-radius: 8px;
+        color: white;
+        position: absolute;
+        top: -48px;
+        pointer-events: none;
+        transition: opacity 0.5s;
+        & p {
+            margin: 0;
+        }
+        &::after {
+            border-left: solid transparent 6px;
+            border-right: solid transparent 6px;
+            border-top: solid $primary-magenta 6px;
+            content: '';
+            left: 0;
+            right: 0;
+            margin: auto;
+            position: absolute;
+            top: 100%;
+            width: 0;
+          }          
+    }
+    &:hover .skill-icon__label{
+        opacity: 1;
+    }
+}

@@ -13,27 +13,6 @@ body::-webkit-scrollbar-thumb {
   background: #c0c1cc;
 }
 
-h1 {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-h2 {
-  text-transform: uppercase;
-  margin: 2px;
-  font-size: 1rem;
-  font-weight: 600;
-  letter-spacing: 3px;
-}
-
-a {
-  text-decoration: none;
-}
-a:visited {
-  color: #312f35;
-}
-
 .main {
   display: -ms-flexbox;
   display: flex;
@@ -57,17 +36,43 @@ a:visited {
   margin-bottom: 32px;
 }
 
-.footer {
-  margin: 90px 0px;
+/* Text */
+h1 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
-.footer__text {
-  font-size: 0.8rem;
+
+h2 {
+  text-transform: uppercase;
+  margin: 2px;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 3px;
 }
-.footer__logo {
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: #312f35;
+}
+
+/* Page Sections */
+.intro {
+  max-width: 400px;
+  margin: 100px auto;
+  margin-bottom: 24px;
+}
+.intro__img {
+  width: 250px;
+  height: 250px;
+}
+
+.skills__icon {
   width: 30px;
   height: 30px;
 }
-
 .contact a {
   display: inline-block;
   position: relative;
@@ -80,16 +85,68 @@ a:visited {
 .contact svg path {
   fill: #312f35;
   transition: fill 0.5s ease-in-out;
+  -webkit-transition: fill 0.5s ease-in-out;
+  -ms-transition: fill 0.5s ease-in-out;
+  -moz-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
 }
 .contact svg:hover path {
   fill: #f40056;
 }
 
+.skill__section {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 24px;
+}
+.skill__label {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #ebebf2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  margin-top: -64px;
+  z-index: -1;
+  pointer-events: none;
+  text-shadow: -1px -1px 0 #8f8f99, 1px -1px 0 #8f8f99, -1px 1px 0 #8f8f99, 1px 1px 0 #8f8f99;
+  transition: font-size 0.5s ease-in-out;
+  -webkit-transition: font-size 0.5s ease-in-out;
+  -ms-transition: font-size 0.5s ease-in-out;
+  -moz-transition: font-size 0.5s ease-in-out;
+  -o-transition: font-size 0.5s ease-in-out;
+}
+
+.footer {
+  margin: 90px 0px;
+}
+.footer__text {
+  font-size: 0.8rem;
+}
+.footer__logo {
+  width: 30px;
+  height: 30px;
+}
+
+/* Media Queries */
+@media (max-width: 900px) {
+  .skill__label {
+    margin-top: -48px;
+    font-size: 4rem;
+  }
+}
 @media (max-width: 480px) {
   .contact a {
     display: block;
   }
+
+  .skill__label {
+    font-size: 3rem;
+    margin-top: -38px;
+  }
 }
+/* Imports */
 /* Colours */
 .sidenav {
   position: relative;
@@ -129,16 +186,6 @@ a:visited {
     transform: scale(0);
   }
 }
-.intro {
-  max-width: 400px;
-  margin: 100px auto;
-  margin-bottom: 24px;
-}
-.intro__img {
-  width: 250px;
-  height: 250px;
-}
-
 /* Colours */
 .project-card {
   padding: 64px 32px;
@@ -150,7 +197,7 @@ a:visited {
   overflow: hidden;
   background: #312f35;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
   background-position: center;
   transition: width 1s ease-in-out;
 }
@@ -203,11 +250,6 @@ a:visited {
   .project-card:hover .under {
     top: -20%;
     height: 120%;
-  }
-}
-@media (max-width: 400px) {
-  .project-card {
-    background-size: auto 100%;
   }
 }
 /* Colours */
@@ -306,6 +348,48 @@ a:visited {
   .timeline-card {
     margin-left: -130px;
   }
+}
+/* Colours */
+.skill-icon {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  margin: 0px 6px;
+  align-items: center;
+  justify-content: center;
+}
+.skill-icon__icon {
+  width: 30px;
+  height: 30px;
+}
+.skill-icon__label {
+  opacity: 0;
+  padding: 8px 16px;
+  background: #f40056;
+  border-radius: 8px;
+  color: white;
+  position: absolute;
+  top: -48px;
+  pointer-events: none;
+  transition: opacity 0.5s;
+}
+.skill-icon__label p {
+  margin: 0;
+}
+.skill-icon__label::after {
+  border-left: solid transparent 6px;
+  border-right: solid transparent 6px;
+  border-top: solid #f40056 6px;
+  content: "";
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+.skill-icon:hover .skill-icon__label {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */

@@ -12,18 +12,18 @@ import SASS from '../img/sass.svg';
 
 class Projects extends Component {
   PROJECTS = [{title: "Portfolio", description: "Personal Website", time: "Current", img: Background1, 
-              children: <div><object className="project-card__icon" type="image/svg+xml" data={HTML} aria-label="html-icon"/>
-              <object className="project-card__icon" type="image/svg+xml" data={JS} aria-label="javascript-icon"/>
-              <object className="project-card__icon" type="image/svg+xml" data={REACT} aria-label="react-icon"/>
-              <object className="project-card__icon" type="image/svg+xml" data={SASS} aria-label="sass-icon"/></div>},
+              children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
+              <img className="project-card__icon" src={JS} alt="javascript-icon"/>
+              <img className="project-card__icon" src={REACT} alt="react-icon"/>
+              <img className="project-card__icon" src={SASS} alt="sass-icon"/></div>},
 
               {title: "GradeBot", description: "Grade Calculator", time: "2017", img: Background2, 
-              children: <div><object className="project-card__icon" type="image/svg+xml" data={HTML} aria-label="html-icon"/>
-              <object className="project-card__icon" type="image/svg+xml" data={CSS} aria-label="css-icon"/>
-              <object className="project-card__icon" type="image/svg+xml" data={JS} aria-label="javascript-icon"/></div>},
+              children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
+              <img className="project-card__icon" src={CSS} alt="css-icon"/>
+              <img className="project-card__icon" src={JS} alt="javascript-icon"/></div>},
 
               {title: "Anthem", description: "Song Generator", time: "2017", img: Background3,
-              children: <object className="project-card__icon" type="image/svg+xml" data={JAVA} aria-label="java-icon"/>}];
+              children: <img className="project-card__icon" src={JAVA} alt="java-icon"/>}];
 
   render() {
     return (

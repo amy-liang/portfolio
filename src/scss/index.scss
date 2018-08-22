@@ -15,27 +15,6 @@ body{
       }
 }
 
-h1{
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-h2{
-    text-transform: uppercase;
-    margin: 2px;
-    font-size: 1rem;
-    font-weight: 600;
-    letter-spacing: 3px;
-}
-
-a{
-    text-decoration: none;
-    &:visited{
-        color: $grey-7;
-    }
-}
-
 .main{
     display: -ms-flexbox;
     display: flex;
@@ -61,14 +40,48 @@ a{
     }
 }
 
-.footer{
-    margin: 90px 0px;
-    &__text{
-        font-size: 0.8rem;
+/* Text */
+
+h1{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+h2{
+    text-transform: uppercase;
+    margin: 2px;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        color: $grey-7;
     }
-    &__logo{
+}
+
+/* Page Sections */
+
+.intro{
+    max-width: 400px;
+    margin: 100px auto;
+    margin-bottom: 24px;
+    &__img{
+        width: 250px;
+        height: 250px;
+    }
+}
+
+.skills{
+    &__icon{
         width: 30px;
         height: 30px;
+        &:hover{
+            
+        }
     }
 }
 
@@ -83,7 +96,7 @@ a{
         padding: 8px 24px;
         & path {
             fill: $grey-7;
-            transition: fill 0.5s ease-in-out;
+            @include transition-all(fill, 0.5s, ease-in-out);
         }
         &:hover path {
             fill: $primary-magenta;
@@ -91,13 +104,64 @@ a{
     }
 }
 
+.skill{
+    &__section{
+        position: relative;
+        margin-top: 100px;
+        margin-bottom: 24px;
+    }
+    &__label{
+        font-size: 5rem;
+        font-weight: 600;
+        color: $grey-1;
+        position: absolute;
+        left: 0; right: 0;
+        margin: auto;
+        margin-top: -64px;
+        z-index: -1;
+        pointer-events: none;
+        text-shadow:
+            -1px -1px 0 $grey-4,  
+            1px -1px 0 $grey-4,
+            -1px 1px 0 $grey-4,
+            1px 1px 0 $grey-4;
+        @include transition-all(font-size, 0.5s, ease-in-out);
+    }
+}
+
+.footer{
+    margin: 90px 0px;
+    &__text{
+        font-size: 0.8rem;
+    }
+    &__logo{
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Media Queries */
+
+@include tablet(){
+    .skill__label{
+        margin-top: -48px;
+        font-size: 4rem;
+    }
+}
+
 @include phone(){
     .contact a {
         display: block;
     }
+    .skill__label{
+        font-size: 3rem;
+        margin-top: -38px;
+    }
 }
 
+/* Imports */
+
 @import 'sidenav';
-@import 'intro';
 @import 'projectcard';
 @import 'timelinecard';
+@import 'skillicon';

@@ -3,26 +3,34 @@ $tablet-width: 900px;
 $desktop-width: 1024px;
 $large-desktop: 1800px;
   
-  @mixin phone {
-    @media (max-width: #{$phone-width}) {
-      @content;
-    }
+@mixin phone {
+  @media (max-width: #{$phone-width}) {
+    @content;
   }
-  
-  @mixin tablet {
-    @media (max-width: #{$tablet-width}) {
-      @content;
-    }
+}
+
+@mixin tablet {
+  @media (max-width: #{$tablet-width}) {
+    @content;
   }
-  
-  @mixin desktop {
-    @media (max-width: #{$desktop-width}) {
-      @content;
-    }
+}
+
+@mixin desktop {
+  @media (max-width: #{$desktop-width}) {
+    @content;
   }
-  
-  @mixin large-desktop {
-    @media (max-width: #{$large-desktop}) {
-      @content;
-    }
+}
+
+@mixin large-desktop {
+  @media (max-width: #{$large-desktop}) {
+    @content;
   }
+}
+
+@mixin transition-all($property, $duration, $curve){
+  transition: $property $duration $curve;
+  -webkit-transition: $property $duration $curve;
+  -ms-transition: $property $duration $curve;
+  -moz-transition: $property $duration $curve;
+  -o-transition: $property $duration $curve;
+}
