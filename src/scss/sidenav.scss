@@ -24,10 +24,14 @@
         margin: 36px 0;
         cursor: pointer;
         color: $grey-7;
+        -webkit-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        -ms-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        -moz-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        -o-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
         transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
         &:hover {
             color: $primary-magenta;
-            transform: scale(1.1);
+            @include scale-all(1.1);
         }
     }
 }
@@ -37,7 +41,7 @@
     .sidenav{
         width: auto;
         &__item{
-            transform: scale(0);
+            @include scale-all(0);
         }
     }
 }

@@ -6,7 +6,7 @@ $card-height: 80px;
 
 .timeline-card{
     width: 100%;
-    transition: margin 1s;
+    @include transition-all(margin, 0.5s, ease-in-out);
     &__circle--top, &__circle--bot{
         background-color: $primary-magenta;
         width: 20px;
@@ -42,7 +42,7 @@ $card-height: 80px;
         width: $card-width;
         height: $card-height;
         margin-top: -($card-height*1.6);
-        transition: all 0.5s ease-in-out;
+        @include transition-all(all, 0.5s, ease-in-out);
         display: flex;
         flex-direction: column;
         justify-content: center;

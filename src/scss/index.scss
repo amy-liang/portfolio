@@ -113,18 +113,13 @@ a{
     &__label{
         font-size: 5rem;
         font-weight: 600;
-        color: $grey-1;
+        color: $grey-3;
         position: absolute;
         left: 0; right: 0;
         margin: auto;
-        margin-top: -64px;
+        top: -64px;
         z-index: -1;
         pointer-events: none;
-        text-shadow:
-            -1px -1px 0 $grey-4,  
-            1px -1px 0 $grey-4,
-            -1px 1px 0 $grey-4,
-            1px 1px 0 $grey-4;
         @include transition-all(font-size, 0.5s, ease-in-out);
     }
 }

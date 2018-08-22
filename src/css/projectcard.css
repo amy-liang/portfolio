@@ -11,14 +11,22 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: width 1s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
 }
 .project-card .over {
   opacity: 0;
-  transition: opacity 0.5s;
   position: relative;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0);
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
 }
 .project-card .under {
   top: 50%;
@@ -29,6 +37,10 @@
   position: absolute;
   background-color: #f40056;
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .project-card:hover .over {
   opacity: 1;

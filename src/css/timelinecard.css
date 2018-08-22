@@ -1,7 +1,11 @@
 /* Colours */
 .timeline-card {
   width: 100%;
-  transition: margin 1s;
+  transition: margin 0.5s ease-in-out;
+  -webkit-transition: margin 0.5s ease-in-out;
+  -ms-transition: margin 0.5s ease-in-out;
+  -moz-transition: margin 0.5s ease-in-out;
+  -o-transition: margin 0.5s ease-in-out;
 }
 .timeline-card__circle--top, .timeline-card__circle--bot {
   background-color: #f40056;
@@ -39,6 +43,10 @@
   height: 80px;
   margin-top: -128px;
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;

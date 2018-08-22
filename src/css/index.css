@@ -102,15 +102,14 @@ a:visited {
 .skill__label {
   font-size: 5rem;
   font-weight: 600;
-  color: #ebebf2;
+  color: #c0c1cc;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
-  margin-top: -64px;
+  top: -64px;
   z-index: -1;
   pointer-events: none;
-  text-shadow: -1px -1px 0 #8f8f99, 1px -1px 0 #8f8f99, -1px 1px 0 #8f8f99, 1px 1px 0 #8f8f99;
   transition: font-size 0.5s ease-in-out;
   -webkit-transition: font-size 0.5s ease-in-out;
   -ms-transition: font-size 0.5s ease-in-out;
@@ -171,10 +170,18 @@ a:visited {
   margin: 36px 0;
   cursor: pointer;
   color: #312f35;
+  -webkit-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -ms-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
   transition: color 0.5s ease-in-out, transform 0.5s ease-in-out;
 }
 .sidenav__item:hover {
   color: #f40056;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -o-transform: scale(1.1);
   transform: scale(1.1);
 }
 
@@ -183,6 +190,10 @@ a:visited {
     width: auto;
   }
   .sidenav__item {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    -moz-transform: scale(0);
+    -o-transform: scale(0);
     transform: scale(0);
   }
 }
@@ -199,14 +210,22 @@ a:visited {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  transition: width 1s ease-in-out;
+  transition: width 0.5s ease-in-out;
+  -webkit-transition: width 0.5s ease-in-out;
+  -ms-transition: width 0.5s ease-in-out;
+  -moz-transition: width 0.5s ease-in-out;
+  -o-transition: width 0.5s ease-in-out;
 }
 .project-card .over {
   opacity: 0;
-  transition: opacity 0.5s;
   position: relative;
   z-index: 10;
   background-color: rgba(0, 0, 0, 0);
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
 }
 .project-card .under {
   top: 50%;
@@ -217,6 +236,10 @@ a:visited {
   position: absolute;
   background-color: #f40056;
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
 }
 .project-card:hover .over {
   opacity: 1;
@@ -255,7 +278,11 @@ a:visited {
 /* Colours */
 .timeline-card {
   width: 100%;
-  transition: margin 1s;
+  transition: margin 0.5s ease-in-out;
+  -webkit-transition: margin 0.5s ease-in-out;
+  -ms-transition: margin 0.5s ease-in-out;
+  -moz-transition: margin 0.5s ease-in-out;
+  -o-transition: margin 0.5s ease-in-out;
 }
 .timeline-card__circle--top, .timeline-card__circle--bot {
   background-color: #f40056;
@@ -293,6 +320,10 @@ a:visited {
   height: 80px;
   margin-top: -128px;
   transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -371,7 +402,11 @@ a:visited {
   position: absolute;
   top: -48px;
   pointer-events: none;
-  transition: opacity 0.5s;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
 }
 .skill-icon__label p {
   margin: 0;

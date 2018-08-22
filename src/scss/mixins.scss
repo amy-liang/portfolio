@@ -34,3 +34,11 @@ $large-desktop: 1800px;
   -moz-transition: $property $duration $curve;
   -o-transition: $property $duration $curve;
 }
+
+@mixin scale-all($amount){
+  -webkit-transform: scale($amount);
+  -ms-transform: scale($amount);
+  -moz-transform: scale($amount);
+  -o-transform: scale($amount);
+  transform: scale($amount);
+}

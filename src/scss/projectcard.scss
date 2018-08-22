@@ -13,14 +13,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    transition: width 1s ease-in-out;
+    @include transition-all(width, 0.5s, ease-in-out);
 
     & .over{
         opacity: 0;
-        transition: opacity 0.5s;
         position: relative;
         z-index: 10;
         background-color: rgba(0,0,0,0);
+        @include transition-all(opacity, 0.5s, ease-in-out);
     }
     & .under {
         top: 50%;
@@ -30,7 +30,7 @@
         border-radius: 100%;
         position: absolute;
         background-color: $primary-magenta;
-        transition: all 0.5s ease-in-out;
+        @include transition-all(all, 0.5s, ease-in-out);
     }
     
     &:hover .over{

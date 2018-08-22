@@ -20,7 +20,7 @@
         position: absolute;
         top: -48px;
         pointer-events: none;
-        transition: opacity 0.5s;
+        @include transition-all(opacity, 0.5s, ease-in-out);
         & p {
             margin: 0;
         }
