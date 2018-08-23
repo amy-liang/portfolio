@@ -1,14 +1,21 @@
 import React, { Component } from 'react';
 import ProjectCard from '../components/projectcard';
+
 import Background1 from '../img/background1.png';
 import Background2 from '../img/background2.png';
 import Background3 from '../img/background3.png';
-import CSS from '../img/css.svg';
-import HTML from '../img/html.svg';
-import JAVA from '../img/java.svg';
-import JS from '../img/javascript.svg';
-import REACT from '../img/react.svg';
-import SASS from '../img/sass.svg';
+import Background4 from '../img/background4.png';
+
+import CSS from '../img/projects/css.svg';
+import HTML from '../img/projects/html.svg';
+import JAVA from '../img/projects/java.svg';
+import JS from '../img/projects/javascript.svg';
+import REACT from '../img/projects/react.svg';
+import SASS from '../img/projects/sass.svg';
+import ILLUSTRATOR from '../img/projects/illustrator.svg';
+import PHOTOSHOP from '../img/projects/photoshop.svg';
+import VECTOR from '../img/projects/vector.svg';
+import LOGODESIGN from '../img/projects/logo.svg';
 
 class Projects extends Component {
   PROJECTS = [{title: "Portfolio", description: "Personal Website", time: "Current", img: Background1, 
@@ -23,7 +30,13 @@ class Projects extends Component {
               <img className="project-card__icon" src={JS} alt="javascript-icon"/></div>},
 
               {title: "Anthem", description: "Song Generator", time: "2017", img: Background3,
-              children: <img className="project-card__icon" src={JAVA} alt="java-icon"/>}];
+              children: <div><img className="project-card__icon" src={JAVA} alt="java-icon"/></div>},
+            
+              {title: "Limelight Rebranding", description: "Logo Design, Branding", time: "2018", img: Background4,
+              children: <div><img className="project-card__icon" src={ILLUSTRATOR} alt="illustrator-icon"/>
+              <img className="project-card__icon" src={PHOTOSHOP} alt="photoshop-icon"/>
+              <img className="project-card__icon" src={VECTOR} alt="vector-icon"/>
+              <img className="project-card__icon" src={LOGODESIGN} alt="logodesign-icon"/></div>}];
 
   render() {
     return (
