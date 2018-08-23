@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ProjectCard from '../components/projectcard';
+import Modal from 'react-modal';
 
 import Background1 from '../img/background1.png';
 import Background2 from '../img/background2.png';
@@ -17,7 +18,41 @@ import PHOTOSHOP from '../img/projects/photoshop.svg';
 import VECTOR from '../img/projects/vector.svg';
 import LOGODESIGN from '../img/projects/logo.svg';
 
+const customStyles = {
+  content : {
+    top                   : '50%',
+    left                  : '50%',
+    right                 : 'auto',
+    bottom                : 'auto',
+    marginRight           : '-50%',
+    transform             : 'translate(-50%, -50%)'
+  }
+};
+
 class Projects extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+      modalIsOpen: false
+    };
+
+    this.openModal = this.openModal.bind(this);
+    this.afterOpenModal = this.afterOpenModal.bind(this);
+    this.closeModal = this.closeModal.bind(this);
+  }
+
+  openModal() {
+    this.setState({modalIsOpen: true});
+  }
+
+  afterOpenModal() {
+  }
+
+  closeModal() {
+    this.setState({modalIsOpen: false});
+  }
+
   PROJECTS = [{title: "Portfolio", description: "Personal Website", time: "Current", img: Background1, 
               children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
               <img className="project-card__icon" src={JS} alt="javascript-icon"/>
@@ -44,6 +79,14 @@ class Projects extends Component {
         <h1 className="section__title">Projects</h1>
         { this.PROJECTS.map((value,key) => <ProjectCard key={key} title={value.title} 
           description={value.description} time={value.time} img={value.img}>{value.children}</ProjectCard>)}
+          <button onClick={this.openModal}>Open Modal</button>
+          <Modal
+          isOpen={this.state.modalIsOpen}
+          onAfterOpen={this.afterOpenModal}
+          onRequestClose={this.closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        ><h2>aduhawoudoadw</h2></Modal>
       </div>
     );
   }
