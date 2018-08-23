@@ -40,6 +40,9 @@
 @include phone(){
     .sidenav{
         width: auto;
+        &__logo{
+            position: absolute;
+        }
         &__item{
             @include scale-all(0);
         }

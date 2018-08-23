@@ -139,18 +139,18 @@ a{
 
 @include tablet(){
     .skill__label{
-        margin-top: -48px;
+        margin-top: 8px;
         font-size: 4rem;
     }
 }
 
 @include phone(){
-    .contact a {
-        display: block;
-    }
     .skill__label{
         font-size: 3rem;
-        margin-top: -38px;
+        margin-top: 24px;
+    }
+    .contact a {
+        display: block;
     }
 }
 

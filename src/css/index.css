@@ -131,18 +131,18 @@ a:visited {
 /* Media Queries */
 @media (max-width: 900px) {
   .skill__label {
-    margin-top: -48px;
+    margin-top: 8px;
     font-size: 4rem;
   }
 }
 @media (max-width: 480px) {
-  .contact a {
-    display: block;
-  }
-
   .skill__label {
     font-size: 3rem;
-    margin-top: -38px;
+    margin-top: 24px;
+  }
+
+  .contact a {
+    display: block;
   }
 }
 /* Imports */
@@ -188,6 +188,9 @@ a:visited {
 @media (max-width: 480px) {
   .sidenav {
     width: auto;
+  }
+  .sidenav__logo {
+    position: absolute;
   }
   .sidenav__item {
     -webkit-transform: scale(0);

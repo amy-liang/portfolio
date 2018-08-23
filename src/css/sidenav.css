@@ -41,6 +41,9 @@
   .sidenav {
     width: auto;
   }
+  .sidenav__logo {
+    position: absolute;
+  }
   .sidenav__item {
     -webkit-transform: scale(0);
     -ms-transform: scale(0);

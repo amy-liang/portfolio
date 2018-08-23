@@ -1,0 +1,48 @@
+/* Colours */
+.skill-icon {
+  display: inline-flex;
+  width: auto;
+  height: auto;
+  margin: 0px 6px;
+  align-items: center;
+  justify-content: center;
+}
+.skill-icon__icon {
+  width: 30px;
+  height: 30px;
+}
+.skill-icon__label {
+  opacity: 0;
+  padding: 8px 16px;
+  background: #f40056;
+  border-radius: 8px;
+  color: white;
+  position: absolute;
+  top: -48px;
+  pointer-events: none;
+  transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+}
+.skill-icon__label p {
+  margin: 0;
+}
+.skill-icon__label::after {
+  border-left: solid transparent 6px;
+  border-right: solid transparent 6px;
+  border-top: solid #f40056 6px;
+  content: "";
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 100%;
+  width: 0;
+}
+.skill-icon:hover .skill-icon__label {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=skillicon.css.map */
