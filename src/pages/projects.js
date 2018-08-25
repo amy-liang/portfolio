@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ProjectCard from '../components/projectcard';
-import Modal from 'react-modal';
 
 import Background1 from '../img/background1.png';
 import Background2 from '../img/background2.png';
@@ -18,56 +17,27 @@ import PHOTOSHOP from '../img/projects/photoshop.svg';
 import VECTOR from '../img/projects/vector.svg';
 import LOGODESIGN from '../img/projects/logo.svg';
 
-const customStyles = {
-  content : {
-    top                   : '50%',
-    left                  : '50%',
-    right                 : 'auto',
-    bottom                : 'auto',
-    marginRight           : '-50%',
-    transform             : 'translate(-50%, -50%)'
-  }
-};
-
 class Projects extends Component {
-  constructor() {
-    super();
-
-    this.state = {
-      modalIsOpen: false
-    };
-
-    this.openModal = this.openModal.bind(this);
-    this.afterOpenModal = this.afterOpenModal.bind(this);
-    this.closeModal = this.closeModal.bind(this);
-  }
-
-  openModal() {
-    this.setState({modalIsOpen: true});
-  }
-
-  afterOpenModal() {
-  }
-
-  closeModal() {
-    this.setState({modalIsOpen: false});
-  }
 
   PROJECTS = [{title: "Portfolio", description: "Personal Website", time: "Current", img: Background1, 
+              paragraph: "Built using React.js, HTML, JavaScript and SASS, my personal website was created from scratch based upon my own brand. I learned about modular design patterns, React syntax, and SASS tricks.",
               children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
               <img className="project-card__icon" src={JS} alt="javascript-icon"/>
               <img className="project-card__icon" src={REACT} alt="react-icon"/>
               <img className="project-card__icon" src={SASS} alt="sass-icon"/></div>},
 
               {title: "GradeBot", description: "Grade Calculator", time: "2017", img: Background2, 
+              paragraph: "WIP",
               children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
               <img className="project-card__icon" src={CSS} alt="css-icon"/>
               <img className="project-card__icon" src={JS} alt="javascript-icon"/></div>},
 
               {title: "Anthem", description: "Song Generator", time: "2017", img: Background3,
+              paragraph: "WIP",
               children: <div><img className="project-card__icon" src={JAVA} alt="java-icon"/></div>},
             
               {title: "Limelight Rebranding", description: "Logo Design, Branding", time: "2018", img: Background4,
+              paragraph: "WIP",
               children: <div><img className="project-card__icon" src={ILLUSTRATOR} alt="illustrator-icon"/>
               <img className="project-card__icon" src={PHOTOSHOP} alt="photoshop-icon"/>
               <img className="project-card__icon" src={VECTOR} alt="vector-icon"/>
@@ -78,15 +48,7 @@ class Projects extends Component {
       <div className="section__content projects" id="projects">
         <h1 className="section__title">Projects</h1>
         { this.PROJECTS.map((value,key) => <ProjectCard key={key} title={value.title} 
-          description={value.description} time={value.time} img={value.img}>{value.children}</ProjectCard>)}
-          <button onClick={this.openModal}>Open Modal</button>
-          <Modal
-          isOpen={this.state.modalIsOpen}
-          onAfterOpen={this.afterOpenModal}
-          onRequestClose={this.closeModal}
-          style={customStyles}
-          contentLabel="Example Modal"
-        ><h2>aduhawoudoadw</h2></Modal>
+          description={value.description} time={value.time} img={value.img} paragraph={value.paragraph}>{value.children}</ProjectCard>)}
       </div>
     );
   }

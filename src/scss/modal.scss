@@ -1,0 +1,56 @@
+@import 'colors';
+@import 'mixins';
+
+.modal{
+    width: 400px;
+    padding: 16px;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-40%,-50%);
+    position: absolute;
+    background: white;
+    outline: none;
+    text-align: center;
+    @include transition-all(all, 0.5s, linear);
+    & h2 {
+        padding-top: 20px;
+    }
+    & p {
+        font-size: 0.8rem;
+        padding: 8px;
+        padding-bottom: 0;
+    }
+    &__button{
+        background: none;
+        padding-bottom: 16px;
+        border: none;
+        cursor: pointer;
+        outline: none;
+        color: $primary-magenta;
+    }
+}
+
+.ReactModalPortal > * {
+    opacity: 0;
+}
+
+.ReactModal__Overlay {
+    @include transition-all(all, 0.5s, linear);
+    background: rgba(0, 0, 0, 0.15) !important;
+    &--after-open {
+        opacity: 1;
+    }
+    &--before-close {
+        opacity: 0;
+    }
+}
+
+@include phone(){
+    .modal{
+        width: 300px;
+        transform: translate(-50%,-50%);
+    }
+}
