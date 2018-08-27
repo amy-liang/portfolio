@@ -21,10 +21,14 @@ class ProjectCard extends Component {
     this.setState({modalIsOpen: false});
   }
 
+  componentWillMount() {
+    Modal.setAppElement('body');
+  }
+
   render() {
     return (
       <div className={this.state.modalIsOpen? "project-card project-card--open" : "project-card" } style={{ backgroundImage: "url(" + this.props.img +")" }}>
-        <button onClick={this.openModal} >
+        <button className="modal__wrap" onClick={this.openModal} >
              <div className="over">
                 <h2 className="project-card__title">{ this.props.title }</h2>
                 <p className="project-card__text">{ this.props.description + " | " + this.props.time }</p>

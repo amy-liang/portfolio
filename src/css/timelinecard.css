@@ -62,16 +62,15 @@
   border-width: 15px;
   border-style: solid;
 }
-.timeline-card__content--left:hover, .timeline-card__content--right:hover {
-  transform: scale(1.04);
-  color: #f40056;
-}
 .timeline-card__content--left {
   right: 50%;
 }
 .timeline-card__content--left::after {
   border-color: transparent transparent transparent white;
   left: 240px;
+}
+.timeline-card__content--left:hover {
+  transform: translateX(-4px);
 }
 .timeline-card__content--right {
   left: 50%;
@@ -80,6 +79,9 @@
 .timeline-card__content--right::after {
   border-color: transparent white transparent transparent;
   right: 240px;
+}
+.timeline-card__content--right:hover {
+  transform: translateX(4px);
 }
 
 @media (max-width: 900px) {

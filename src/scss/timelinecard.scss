@@ -58,16 +58,15 @@ $card-height: 80px;
             border-width: 15px;
             border-style: solid;
         }
-        &:hover{
-            transform: scale(1.04);
-            color: $primary-magenta;
-        }
     }
     &__content--left{
         right: 50%;
         &::after{
             border-color: transparent transparent transparent white;
             left: $card-width;
+        }
+        &:hover{
+            transform: translateX(-4px);
         }
     }
     &__content--right{
@@ -76,6 +75,9 @@ $card-height: 80px;
         &::after{
             border-color: transparent white transparent transparent;
             right: $card-width;
+        }
+        &:hover{
+            transform: translateX(4px);
         }
     }
 }

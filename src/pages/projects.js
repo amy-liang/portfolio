@@ -19,25 +19,25 @@ import LOGODESIGN from '../img/projects/logo.svg';
 
 class Projects extends Component {
 
-  PROJECTS = [{title: "Portfolio", description: "Personal Website", time: "Current", img: Background1, 
+  PROJECTS = [{title: "Portfolio", description: "Personal Website", time: "Aug 2018", img: Background1, 
               paragraph: "Built using React.js, HTML, JavaScript and SASS, my personal website was created from scratch based upon my own brand. I learned about modular design patterns, React syntax, and SASS tricks.",
               children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
               <img className="project-card__icon" src={JS} alt="javascript-icon"/>
               <img className="project-card__icon" src={REACT} alt="react-icon"/>
               <img className="project-card__icon" src={SASS} alt="sass-icon"/></div>},
 
-              {title: "GradeBot", description: "Grade Calculator", time: "2017", img: Background2, 
-              paragraph: "WIP",
+              {title: "GradeBot", description: "Grade Calculator", time: "Oct 2017", img: Background2, 
+              paragraph: "GradeBot was built in pure HTML, CSS and JavaScript, and estimates grades based on current marks or predicted marks. It was a good first step into learning about web development tools.",
               children: <div><img className="project-card__icon" src={HTML} alt="html-icon"/>
               <img className="project-card__icon" src={CSS} alt="css-icon"/>
               <img className="project-card__icon" src={JS} alt="javascript-icon"/></div>},
 
-              {title: "Anthem", description: "Song Generator", time: "2017", img: Background3,
-              paragraph: "WIP",
+              {title: "Anthem", description: "Song Generator", time: "June 2017", img: Background3,
+              paragraph: "Anthem is a song generator program that uses Last.fm API to filter through song tags, genres and artists to find your next favourite song. Built using Java, I was able to grab from an API and use its functions to create a working program.",
               children: <div><img className="project-card__icon" src={JAVA} alt="java-icon"/></div>},
             
-              {title: "Limelight Rebranding", description: "Logo Design, Branding", time: "2018", img: Background4,
-              paragraph: "WIP",
+              {title: "Limelight Rebranding", description: "Logo Design, Branding", time: "May 2018", img: Background4,
+              paragraph: "Keeping the distinct feel of the old logo, Limelight Dance Crew was re-branded to include a new logo, colour scheme, typography and branding assets.",
               children: <div><img className="project-card__icon" src={ILLUSTRATOR} alt="illustrator-icon"/>
               <img className="project-card__icon" src={PHOTOSHOP} alt="photoshop-icon"/>
               <img className="project-card__icon" src={VECTOR} alt="vector-icon"/>
